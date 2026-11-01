@@ -1,0 +1,288 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4hud00000001"]
+
+[ext_resource type="Script" path="res://scripts/ui/HUD.gd" id="1_hud"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+content_margin_left = 18.0
+content_margin_top = 10.0
+content_margin_right = 18.0
+content_margin_bottom = 10.0
+bg_color = Color(0.04, 0.06, 0.08, 0.86)
+border_width_top = 2
+border_color = Color(0.16, 0.72, 0.68, 1)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopLeft" type="VBoxContainer" parent="Root"]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 16.0
+offset_right = 520.0
+offset_bottom = 90.0
+
+[node name="LineLabel" type="Label" parent="Root/TopLeft"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.88, 0.84, 1)
+theme_override_font_sizes/font_size = 20
+text = "ARS · HAT 4 · SEFER 4107"
+
+[node name="ClockLabel" type="Label" parent="Root/TopLeft"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.88, 0.9, 1)
+theme_override_font_sizes/font_size = 16
+text = "Sefer süresi 00:00 / tarife 03:10"
+
+[node name="Warning" type="Label" parent="Root"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 24.0
+offset_right = 400.0
+offset_bottom = 70.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.25, 0.2, 1)
+theme_override_font_sizes/font_size = 30
+text = ""
+horizontal_alignment = 1
+
+[node name="Hint" type="Label" parent="Root"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 72.0
+offset_right = 400.0
+offset_bottom = 104.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 20
+text = ""
+horizontal_alignment = 1
+
+[node name="Messages" type="VBoxContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -440.0
+offset_top = 16.0
+offset_right = -20.0
+offset_bottom = 300.0
+grow_horizontal = 0
+alignment = 2
+
+[node name="BottomPanel" type="PanelContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -176.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="HBox" type="HBoxContainer" parent="Root/BottomPanel"]
+layout_mode = 2
+theme_override_constants/separation = 36
+
+[node name="SpeedBox" type="VBoxContainer" parent="Root/BottomPanel/HBox"]
+custom_minimum_size = Vector2(230, 0)
+layout_mode = 2
+
+[node name="SpeedTitle" type="Label" parent="Root/BottomPanel/HBox/SpeedBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.6, 0.65, 1)
+theme_override_font_sizes/font_size = 14
+text = "HIZ (km/s)"
+
+[node name="SpeedLabel" type="Label" parent="Root/BottomPanel/HBox/SpeedBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.97, 1, 1)
+theme_override_font_sizes/font_size = 72
+text = "0"
+
+[node name="LimitLabel" type="Label" parent="Root/BottomPanel/HBox/SpeedBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.88, 0.84, 1)
+theme_override_font_sizes/font_size = 18
+text = "Limit 40  ·  İleride —"
+
+[node name="LeverBox" type="VBoxContainer" parent="Root/BottomPanel/HBox"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+
+[node name="LeverTitle" type="Label" parent="Root/BottomPanel/HBox/LeverBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.6, 0.65, 1)
+theme_override_font_sizes/font_size = 14
+text = "KOL  (W/S · N nötr)"
+
+[node name="LeverValue" type="Label" parent="Root/BottomPanel/HBox/LeverBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "NÖTR"
+
+[node name="LeverBar" type="ProgressBar" parent="Root/BottomPanel/HBox/LeverBox"]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+min_value = -100.0
+max_value = 100.0
+show_percentage = false
+
+[node name="ReverserLabel" type="Label" parent="Root/BottomPanel/HBox/LeverBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Yön: İLERİ  (R)"
+
+[node name="EmergencyLabel" type="Label" parent="Root/BottomPanel/HBox/LeverBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.3, 0.25, 1)
+theme_override_font_sizes/font_size = 18
+text = ""
+
+[node name="RouteBox" type="VBoxContainer" parent="Root/BottomPanel/HBox"]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+
+[node name="RouteTitle" type="Label" parent="Root/BottomPanel/HBox/RouteBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.6, 0.65, 1)
+theme_override_font_sizes/font_size = 14
+text = "SONRAKİ İSTASYON"
+
+[node name="NextStationLabel" type="Label" parent="Root/BottomPanel/HBox/RouteBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Kurtköy"
+
+[node name="DistanceLabel" type="Label" parent="Root/BottomPanel/HBox/RouteBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Duruş noktasına 2270 m"
+
+[node name="SignalLabel" type="Label" parent="Root/BottomPanel/HBox/RouteBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Sinyal S401 · 30 m · KIRMIZI"
+
+[node name="StopLabel" type="Label" parent="Root/BottomPanel/HBox/RouteBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 18
+text = ""
+
+[node name="DoorsBox" type="VBoxContainer" parent="Root/BottomPanel/HBox"]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+
+[node name="DoorsTitle" type="Label" parent="Root/BottomPanel/HBox/DoorsBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.6, 0.65, 1)
+theme_override_font_sizes/font_size = 14
+text = "KAPILAR  (Q sol · E sağ)"
+
+[node name="DoorsLeftLabel" type="Label" parent="Root/BottomPanel/HBox/DoorsBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "SOL   KAPALI"
+
+[node name="DoorsRightLabel" type="Label" parent="Root/BottomPanel/HBox/DoorsBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "SAĞ   KAPALI"
+
+[node name="PlatformSideLabel" type="Label" parent="Root/BottomPanel/HBox/DoorsBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.88, 0.84, 1)
+theme_override_font_sizes/font_size = 16
+text = "Peron tarafı: SAĞ"
+
+[node name="Help" type="Label" parent="Root"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -560.0
+offset_top = -206.0
+offset_right = -16.0
+offset_bottom = -182.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.6, 0.65, 0.7, 1)
+theme_override_font_sizes/font_size = 13
+text = "W/S kol · N nötr · Space ACİL · Shift+R reset · Q/E kapı · R yön · F onay · L far · K ışık · H korna · Tab MMI · M fare · Esc menü"
+horizontal_alignment = 2
+
+[node name="Crosshair" type="Label" parent="Root"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.7)
+theme_override_font_sizes/font_size = 26
+text = "·"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CrosshairLabel" type="Label" parent="Root"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = 16.0
+offset_right = 300.0
+offset_bottom = 44.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.5, 1)
+theme_override_font_sizes/font_size = 17
+text = ""
+horizontal_alignment = 1
+
+[node name="CenterMsg" type="PanelContainer" parent="Root"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -420.0
+offset_top = 110.0
+offset_right = 420.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="CenterMsgLabel" type="Label" parent="Root/CenterMsg"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 17
+text = ""
+autowrap_mode = 3
+horizontal_alignment = 1

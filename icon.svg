@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="20" fill="#1c2026"/>
+  <rect x="18" y="30" width="92" height="56" rx="14" fill="#2ec4b6"/>
+  <rect x="26" y="40" width="76" height="20" rx="6" fill="#0b2a2e"/>
+  <circle cx="38" cy="98" r="7" fill="#e6e6e6"/>
+  <circle cx="90" cy="98" r="7" fill="#e6e6e6"/>
+  <rect x="30" y="68" width="68" height="4" fill="#f2c94c"/>
+  <text x="64" y="118" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e6e6e6" text-anchor="middle">ARS</text>
+</svg>

@@ -1,0 +1,18 @@
+# Metin dosyaları LF ile normalize edilir (Godot LF kullanır)
+* text=auto eol=lf
+*.gd text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+*.godot text eol=lf
+*.cfg text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.svg text eol=lf
+# İkili varlıklar
+*.glb binary
+*.png binary
+*.jpg binary
+*.wav binary
+*.ogg binary
+*.ttf binary

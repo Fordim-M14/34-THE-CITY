@@ -1,0 +1,377 @@
+{
+  "route_id": "hat4",
+  "operator": "ARS – Anadolu Raylı Sistemler İşletmesi",
+  "line_name": "Hat 4 — Havalimanı Hattı",
+  "line_color": "#d4327a",
+  "train_model": "ARS T-400 \"Boğaz\"",
+  "train_cars": 4,
+  "max_speed_kmh": 80,
+  "dwell_seconds": 22,
+  "schedule_tolerance_seconds": 20,
+  "terminus_forward": "Pendik",
+  "terminus_reverse": "Sabiha Gökçen Havalimanı",
+  "direction_label_forward": "Kadıköy yönü",
+  "direction_label_reverse": "Havalimanı yönü",
+  "unlock_level": 1,
+  "stations": [
+    {
+      "id": "SGH",
+      "name": "Sabiha Gökçen Havalimanı",
+      "short": "Havalimanı",
+      "stop_pos": 150.0,
+      "platform_start": 40.0,
+      "platform_end": 170.0,
+      "door_side": "right",
+      "style": "airport",
+      "depth_m": 28,
+      "schedule_s": 0,
+      "transfer": "Havalimanı terminali",
+      "popularity": 1.2,
+      "accent": "#29b8ad"
+    },
+    {
+      "id": "KRT",
+      "name": "Kurtköy",
+      "short": "Kurtköy",
+      "stop_pos": 2420.0,
+      "platform_start": 2310.0,
+      "platform_end": 2440.0,
+      "door_side": "right",
+      "style": "modern",
+      "depth_m": 22,
+      "schedule_s": 180,
+      "popularity": 0.8,
+      "accent": "#d4327a"
+    },
+    {
+      "id": "YYS",
+      "name": "Yayalar-Şeyhli",
+      "short": "Yayalar",
+      "stop_pos": 4120.0,
+      "platform_start": 4010.0,
+      "platform_end": 4140.0,
+      "door_side": "right",
+      "style": "modern",
+      "depth_m": 14,
+      "schedule_s": 345,
+      "popularity": 0.7,
+      "accent": "#2a9d5c"
+    },
+    {
+      "id": "FCH",
+      "name": "Fevzi Çakmak-Hastane",
+      "short": "F. Çakmak",
+      "stop_pos": 5520.0,
+      "platform_start": 5410.0,
+      "platform_end": 5540.0,
+      "door_side": "right",
+      "style": "deep",
+      "depth_m": 34,
+      "schedule_s": 495,
+      "popularity": 0.9,
+      "accent": "#3a74d6"
+    },
+    {
+      "id": "TVS",
+      "name": "Tavşantepe",
+      "short": "Tavşantepe",
+      "stop_pos": 6820.0,
+      "platform_start": 6710.0,
+      "platform_end": 6840.0,
+      "door_side": "right",
+      "style": "modern",
+      "depth_m": 20,
+      "schedule_s": 640,
+      "popularity": 0.8,
+      "accent": "#e08a1e"
+    },
+    {
+      "id": "PND",
+      "name": "Pendik",
+      "short": "Pendik",
+      "stop_pos": 8160.0,
+      "platform_start": 8050.0,
+      "platform_end": 8180.0,
+      "door_side": "right",
+      "style": "classic",
+      "depth_m": 18,
+      "schedule_s": 790,
+      "transfer": "Marmaray aktarma",
+      "popularity": 1.1,
+      "accent": "#8a3b1e"
+    }
+  ],
+  "speed_limits": [
+    {
+      "from": 0.0,
+      "to": 230.0,
+      "limit_kmh": 40
+    },
+    {
+      "from": 230.0,
+      "to": 700.0,
+      "limit_kmh": 80
+    },
+    {
+      "from": 700.0,
+      "to": 1500.0,
+      "limit_kmh": 70
+    },
+    {
+      "from": 1500.0,
+      "to": 2050.0,
+      "limit_kmh": 80
+    },
+    {
+      "from": 2050.0,
+      "to": 2250.0,
+      "limit_kmh": 50
+    },
+    {
+      "from": 2250.0,
+      "to": 2520.0,
+      "limit_kmh": 35
+    },
+    {
+      "from": 2520.0,
+      "to": 3300.0,
+      "limit_kmh": 80
+    },
+    {
+      "from": 3300.0,
+      "to": 3750.0,
+      "limit_kmh": 60
+    },
+    {
+      "from": 3750.0,
+      "to": 3950.0,
+      "limit_kmh": 50
+    },
+    {
+      "from": 3950.0,
+      "to": 4220.0,
+      "limit_kmh": 35
+    },
+    {
+      "from": 4220.0,
+      "to": 5000.0,
+      "limit_kmh": 80
+    },
+    {
+      "from": 5000.0,
+      "to": 5350.0,
+      "limit_kmh": 50
+    },
+    {
+      "from": 5350.0,
+      "to": 5620.0,
+      "limit_kmh": 35
+    },
+    {
+      "from": 5620.0,
+      "to": 6350.0,
+      "limit_kmh": 80
+    },
+    {
+      "from": 6350.0,
+      "to": 6650.0,
+      "limit_kmh": 50
+    },
+    {
+      "from": 6650.0,
+      "to": 6920.0,
+      "limit_kmh": 35
+    },
+    {
+      "from": 6920.0,
+      "to": 7700.0,
+      "limit_kmh": 80
+    },
+    {
+      "from": 7700.0,
+      "to": 7980.0,
+      "limit_kmh": 50
+    },
+    {
+      "from": 7980.0,
+      "to": 8300.0,
+      "limit_kmh": 35
+    }
+  ],
+  "segments": [
+    {
+      "from": 0.0,
+      "to": 8400.0,
+      "type": "tunnel"
+    }
+  ],
+  "signal_rules": {
+    "departure_offset": 12.0,
+    "approach_offset": 260.0,
+    "block_spacing": 650.0
+  },
+  "track": {
+    "buffer_end": 8300.0,
+    "points": [
+      {
+        "pos": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -700
+        ],
+        "out": [
+          0,
+          0,
+          -300
+        ]
+      },
+      {
+        "pos": [
+          90,
+          0,
+          -1500
+        ],
+        "in": [
+          0,
+          0,
+          300
+        ],
+        "out": [
+          0,
+          0,
+          -250
+        ]
+      },
+      {
+        "pos": [
+          90,
+          0,
+          -2600
+        ],
+        "out": [
+          0,
+          0,
+          -300
+        ]
+      },
+      {
+        "pos": [
+          -80,
+          8,
+          -3500
+        ],
+        "in": [
+          0,
+          0,
+          350
+        ],
+        "out": [
+          0,
+          0,
+          -300
+        ]
+      },
+      {
+        "pos": [
+          -80,
+          8,
+          -4300
+        ],
+        "out": [
+          0,
+          0,
+          -250
+        ]
+      },
+      {
+        "pos": [
+          40,
+          2,
+          -5100
+        ],
+        "in": [
+          0,
+          0,
+          250
+        ],
+        "out": [
+          0,
+          0,
+          -250
+        ]
+      },
+      {
+        "pos": [
+          40,
+          2,
+          -5900
+        ],
+        "out": [
+          0,
+          0,
+          -250
+        ]
+      },
+      {
+        "pos": [
+          -60,
+          -3,
+          -6600
+        ],
+        "in": [
+          0,
+          0,
+          250
+        ],
+        "out": [
+          0,
+          0,
+          -250
+        ]
+      },
+      {
+        "pos": [
+          -60,
+          -3,
+          -7300
+        ],
+        "out": [
+          0,
+          0,
+          -200
+        ]
+      },
+      {
+        "pos": [
+          20,
+          0,
+          -7900
+        ],
+        "in": [
+          0,
+          0,
+          200
+        ],
+        "out": [
+          0,
+          0,
+          -150
+        ]
+      },
+      {
+        "pos": [
+          20,
+          0,
+          -8330
+        ]
+      }
+    ]
+  }
+}

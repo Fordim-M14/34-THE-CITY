@@ -1,0 +1,60 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="M4 Vardiya"
+config/description="Birinci şahıs metro sürüş simülasyonu (prototip). Kurgusal işletme: ARS – Anadolu Raylı Sistemler."
+config/version="0.4.1"
+run/main_scene="res://scenes/ui/MainMenu.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameState="*res://scripts/autoload/GameState.gd"
+Scoring="*res://scripts/autoload/Scoring.gd"
+AudioManager="*res://scripts/autoload/AudioManager.gd"
+Career="*res://scripts/autoload/Career.gd"
+Settings="*res://scripts/autoload/Settings.gd"
+SaveGame="*res://scripts/autoload/SaveGame.gd"
+Perf="*res://scripts/autoload/PerfOverlay.gd"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=false
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="forward_plus"
+rendering_device/fallback_to_opengl3=true
+lights_and_shadows/directional_shadow/size=4096
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=2
+lights_and_shadows/positional_shadow/atlas_size=4096
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=2
+anti_aliasing/quality/msaa_3d=2
+textures/default_filters/anisotropic_filtering_level=3
+textures/default_filters/texture_mipmap_bias=-0.1
+environment/ssao/quality=2
+environment/ssil/quality=1
+environment/screen_space_reflection/roughness_quality=2
+environment/volumetric_fog/volume_size=96
+environment/volumetric_fog/volume_depth=96
+environment/glow/upscale_mode=1
+scaling_3d/mode=0
+occlusion_culling/use_occlusion_culling=false

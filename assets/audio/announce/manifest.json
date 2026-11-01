@@ -1,0 +1,194 @@
+{
+ "version": 1,
+ "voice_tr": "mbrola-tr2 (diphone, CC-free output)",
+ "voice_en": "piper libritts-high spk12 (CC BY 4.0)",
+ "note": "Profesyonel kayıt için tools/import_voice_pack.py — aynı anahtarlarla WAV/MP3 verin.",
+ "items": {
+  "welcome_forward": {
+   "tr_text": "A.R.S. Hat dört'e hoş geldiniz. Bu tren Kadıköy yönüne gitmektedir.",
+   "en_text": "Welcome to A.R.S. Line four. This train is bound for Kadikoy.",
+   "tr_file": "welcome_forward.wav",
+   "en_file": "welcome_forward_en.wav"
+  },
+  "welcome_reverse": {
+   "tr_text": "A.R.S. Hat dört'e hoş geldiniz. Bu tren Sabiha Gökçen Havalimanı yönüne gitmektedir.",
+   "en_text": "Welcome to A.R.S. Line four. This train is bound for Sabiha Gokchen Airport.",
+   "tr_file": "welcome_reverse.wav",
+   "en_file": "welcome_reverse_en.wav"
+  },
+  "closing": {
+   "tr_text": "Kapılar kapanıyor. Lütfen kapılardan uzak durunuz.",
+   "en_text": "Doors are closing. Please stand clear of the doors.",
+   "tr_file": "closing.wav",
+   "en_file": "closing_en.wav"
+  },
+  "delay": {
+   "tr_text": "Sayın yolcular, önümüzdeki trenin gecikmesi nedeniyle kısa bir süre bekleyeceğiz. Anlayışınız için teşekkür ederiz.",
+   "en_text": "Dear passengers, we will be waiting briefly due to a delay of the train ahead. Thank you for your understanding.",
+   "tr_file": "delay.wav",
+   "en_file": "delay_en.wav"
+  },
+  "emergency": {
+   "tr_text": "Sayın yolcular, güvenliğiniz için acil fren uygulanmıştır. Lütfen tutunma yerlerinden tutununuz.",
+   "en_text": "Dear passengers, the emergency brake has been applied for your safety. Please hold on.",
+   "tr_file": "emergency.wav",
+   "en_file": "emergency_en.wav"
+  },
+  "hold": {
+   "tr_text": "Sayın yolcular, sinyal nedeniyle kısa bir süre bekleyeceğiz.",
+   "en_text": "Dear passengers, we are being held at a signal and will depart shortly.",
+   "tr_file": "hold.wav",
+   "en_file": "hold_en.wav"
+  },
+  "mind_gap": {
+   "tr_text": "Lütfen tren ile peron arasındaki boşluğa dikkat ediniz.",
+   "en_text": "Please mind the gap between the train and the platform.",
+   "tr_file": "mind_gap.wav",
+   "en_file": "mind_gap_en.wav"
+  },
+  "next_SGH": {
+   "tr_text": "Gelecek istasyon, Sabiha Gökçen Havalimanı.",
+   "en_text": "Next station, Sabiha Gokchen Airport.",
+   "tr_file": "next_SGH.wav",
+   "en_file": "next_SGH_en.wav"
+  },
+  "arrive_SGH_right": {
+   "tr_text": "Sabiha Gökçen Havalimanı. Kapılar sağdan açılacaktır.",
+   "en_text": "Sabiha Gokchen Airport. Doors will open on the right.",
+   "tr_file": "arrive_SGH_right.wav",
+   "en_file": "arrive_SGH_right_en.wav"
+  },
+  "arrive_SGH_left": {
+   "tr_text": "Sabiha Gökçen Havalimanı. Kapılar soldan açılacaktır.",
+   "en_text": "Sabiha Gokchen Airport. Doors will open on the left.",
+   "tr_file": "arrive_SGH_left.wav",
+   "en_file": "arrive_SGH_left_en.wav"
+  },
+  "terminus_SGH": {
+   "tr_text": "Son istasyon, Sabiha Gökçen Havalimanı. Lütfen tüm eşyalarınızı alarak ininiz. İyi günler dileriz.",
+   "en_text": "This is the last stop, Sabiha Gokchen Airport. Please take all your belongings with you. Have a nice day.",
+   "tr_file": "terminus_SGH.wav",
+   "en_file": "terminus_SGH_en.wav"
+  },
+  "next_KRT": {
+   "tr_text": "Gelecek istasyon, Kurtköy.",
+   "en_text": "Next station, Kurtkoy.",
+   "tr_file": "next_KRT.wav",
+   "en_file": "next_KRT_en.wav"
+  },
+  "arrive_KRT_right": {
+   "tr_text": "Kurtköy. Kapılar sağdan açılacaktır.",
+   "en_text": "Kurtkoy. Doors will open on the right.",
+   "tr_file": "arrive_KRT_right.wav",
+   "en_file": "arrive_KRT_right_en.wav"
+  },
+  "arrive_KRT_left": {
+   "tr_text": "Kurtköy. Kapılar soldan açılacaktır.",
+   "en_text": "Kurtkoy. Doors will open on the left.",
+   "tr_file": "arrive_KRT_left.wav",
+   "en_file": "arrive_KRT_left_en.wav"
+  },
+  "terminus_KRT": {
+   "tr_text": "Son istasyon, Kurtköy. Lütfen tüm eşyalarınızı alarak ininiz. İyi günler dileriz.",
+   "en_text": "This is the last stop, Kurtkoy. Please take all your belongings with you. Have a nice day.",
+   "tr_file": "terminus_KRT.wav",
+   "en_file": "terminus_KRT_en.wav"
+  },
+  "next_YYS": {
+   "tr_text": "Gelecek istasyon, Yayalar-Şeyhli.",
+   "en_text": "Next station, Yayalar Sheyhli.",
+   "tr_file": "next_YYS.wav",
+   "en_file": "next_YYS_en.wav"
+  },
+  "arrive_YYS_right": {
+   "tr_text": "Yayalar-Şeyhli. Kapılar sağdan açılacaktır.",
+   "en_text": "Yayalar Sheyhli. Doors will open on the right.",
+   "tr_file": "arrive_YYS_right.wav",
+   "en_file": "arrive_YYS_right_en.wav"
+  },
+  "arrive_YYS_left": {
+   "tr_text": "Yayalar-Şeyhli. Kapılar soldan açılacaktır.",
+   "en_text": "Yayalar Sheyhli. Doors will open on the left.",
+   "tr_file": "arrive_YYS_left.wav",
+   "en_file": "arrive_YYS_left_en.wav"
+  },
+  "terminus_YYS": {
+   "tr_text": "Son istasyon, Yayalar-Şeyhli. Lütfen tüm eşyalarınızı alarak ininiz. İyi günler dileriz.",
+   "en_text": "This is the last stop, Yayalar Sheyhli. Please take all your belongings with you. Have a nice day.",
+   "tr_file": "terminus_YYS.wav",
+   "en_file": "terminus_YYS_en.wav"
+  },
+  "next_FCH": {
+   "tr_text": "Gelecek istasyon, Fevzi Çakmak-Hastane.",
+   "en_text": "Next station, Fevzi Chakmak Hospital.",
+   "tr_file": "next_FCH.wav",
+   "en_file": "next_FCH_en.wav"
+  },
+  "arrive_FCH_right": {
+   "tr_text": "Fevzi Çakmak-Hastane. Kapılar sağdan açılacaktır.",
+   "en_text": "Fevzi Chakmak Hospital. Doors will open on the right.",
+   "tr_file": "arrive_FCH_right.wav",
+   "en_file": "arrive_FCH_right_en.wav"
+  },
+  "arrive_FCH_left": {
+   "tr_text": "Fevzi Çakmak-Hastane. Kapılar soldan açılacaktır.",
+   "en_text": "Fevzi Chakmak Hospital. Doors will open on the left.",
+   "tr_file": "arrive_FCH_left.wav",
+   "en_file": "arrive_FCH_left_en.wav"
+  },
+  "terminus_FCH": {
+   "tr_text": "Son istasyon, Fevzi Çakmak-Hastane. Lütfen tüm eşyalarınızı alarak ininiz. İyi günler dileriz.",
+   "en_text": "This is the last stop, Fevzi Chakmak Hospital. Please take all your belongings with you. Have a nice day.",
+   "tr_file": "terminus_FCH.wav",
+   "en_file": "terminus_FCH_en.wav"
+  },
+  "next_TVS": {
+   "tr_text": "Gelecek istasyon, Tavşantepe.",
+   "en_text": "Next station, Tavshantepe.",
+   "tr_file": "next_TVS.wav",
+   "en_file": "next_TVS_en.wav"
+  },
+  "arrive_TVS_right": {
+   "tr_text": "Tavşantepe. Kapılar sağdan açılacaktır.",
+   "en_text": "Tavshantepe. Doors will open on the right.",
+   "tr_file": "arrive_TVS_right.wav",
+   "en_file": "arrive_TVS_right_en.wav"
+  },
+  "arrive_TVS_left": {
+   "tr_text": "Tavşantepe. Kapılar soldan açılacaktır.",
+   "en_text": "Tavshantepe. Doors will open on the left.",
+   "tr_file": "arrive_TVS_left.wav",
+   "en_file": "arrive_TVS_left_en.wav"
+  },
+  "terminus_TVS": {
+   "tr_text": "Son istasyon, Tavşantepe. Lütfen tüm eşyalarınızı alarak ininiz. İyi günler dileriz.",
+   "en_text": "This is the last stop, Tavshantepe. Please take all your belongings with you. Have a nice day.",
+   "tr_file": "terminus_TVS.wav",
+   "en_file": "terminus_TVS_en.wav"
+  },
+  "next_PND": {
+   "tr_text": "Gelecek istasyon, Pendik.",
+   "en_text": "Next station, Pendik.",
+   "tr_file": "next_PND.wav",
+   "en_file": "next_PND_en.wav"
+  },
+  "arrive_PND_right": {
+   "tr_text": "Pendik. Kapılar sağdan açılacaktır.",
+   "en_text": "Pendik. Doors will open on the right.",
+   "tr_file": "arrive_PND_right.wav",
+   "en_file": "arrive_PND_right_en.wav"
+  },
+  "arrive_PND_left": {
+   "tr_text": "Pendik. Kapılar soldan açılacaktır.",
+   "en_text": "Pendik. Doors will open on the left.",
+   "tr_file": "arrive_PND_left.wav",
+   "en_file": "arrive_PND_left_en.wav"
+  },
+  "terminus_PND": {
+   "tr_text": "Son istasyon, Pendik. Lütfen tüm eşyalarınızı alarak ininiz. İyi günler dileriz.",
+   "en_text": "This is the last stop, Pendik. Please take all your belongings with you. Have a nice day.",
+   "tr_file": "terminus_PND.wav",
+   "en_file": "terminus_PND_en.wav"
+  }
+ }
+}

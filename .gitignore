@@ -1,0 +1,6 @@
+.godot/
+*.import
+*.uid
+__pycache__/
+build/
+*.tmp
