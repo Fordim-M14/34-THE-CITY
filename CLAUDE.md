@@ -39,8 +39,8 @@ Bu dosya her oturumda otomatik okunur. Ayrıntılı durum için `docs/HANDOFF.md
 ## Git / GitHub
 - Depo: **https://github.com/Fordim-M14/IstanbulGame** (uzak `origin`, dal `main`, 2026-11-01'de ilk commit).
 - Kimlik yerel repo ayarında (`git config user.name/email`); kimlik doğrulama Git Credential Manager ile.
-- `.gitignore`: `.godot/`, `*.import`, `*.uid`, `build/` dışarıda. Yeni klonda editörü bir kez açıp
-  (`godot --headless --path . --import`) varlıkları import ettirmek gerekir.
+- `.gitignore`: `.godot/`, `*.uid`, `build/` dışarıda. `*.import` dosyaları **depoda** (import ayarları korunur);
+  yeni klonda `.godot/` önbelleği için yine bir kez `godot --headless --path . --import` çalıştırılır.
 - `.gitattributes`: metin dosyaları LF; glb/png/wav ikili.
 - Çalışma düzeni: değişiklikler `main`'e commit edilir; commit mesajı Türkçe, CHANGELOG.md ile uyumlu.
   Kullanıcı istemeden push edilmez.
