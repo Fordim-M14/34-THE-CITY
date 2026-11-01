@@ -36,6 +36,15 @@ Bu dosya her oturumda otomatik okunur. Ayrıntılı durum için `docs/HANDOFF.md
   build_passenger_mh.py (MakeHuman), bake_textures.py, make_announcements.py, make_ambience.py, import_voice_pack.py.
 - `tests/` headless regresyon testleri + ekran görüntüsü sahneleri. `shots/` gerçek oyun içi görüntüler.
 
+## Git / GitHub
+- Depo: **https://github.com/Fordim-M14/IstanbulGame** (uzak `origin`, dal `main`, 2026-11-01'de ilk commit).
+- Kimlik yerel repo ayarında (`git config user.name/email`); kimlik doğrulama Git Credential Manager ile.
+- `.gitignore`: `.godot/`, `*.import`, `*.uid`, `build/` dışarıda. Yeni klonda editörü bir kez açıp
+  (`godot --headless --path . --import`) varlıkları import ettirmek gerekir.
+- `.gitattributes`: metin dosyaları LF; glb/png/wav ikili.
+- Çalışma düzeni: değişiklikler `main`'e commit edilir; commit mesajı Türkçe, CHANGELOG.md ile uyumlu.
+  Kullanıcı istemeden push edilmez.
+
 ## Komutlar
 ```
 # Testler (headless, hepsi "[TEST] BAŞARILI" ile bitmeli)
